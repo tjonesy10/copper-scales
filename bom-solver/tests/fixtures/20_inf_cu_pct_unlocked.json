@@ -1,0 +1,34 @@
+{
+  "description": "One row has cu_pct_locked=False, which is unsupported in v1 (PRD \u00a73.2). validate_materials() must return a cu_pct_locked_v1 error for row 2. solve() must raise ValueError.",
+  "materials": [
+    {
+      "row_id": 1,
+      "name": "Feed",
+      "material_type": "Input",
+      "cu_pct": 30.0,
+      "quantity": 100.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 2,
+      "name": "Product",
+      "material_type": "Output",
+      "cu_pct": 30.0,
+      "quantity": 100.0,
+      "locked": false,
+      "cu_pct_locked": false,
+      "start_quantity": null
+    }
+  ],
+  "expected": {
+    "feasible": false,
+    "validation_errors": [
+      {
+        "rule": "cu_pct_locked_v1",
+        "row_id": 2
+      }
+    ]
+  }
+}

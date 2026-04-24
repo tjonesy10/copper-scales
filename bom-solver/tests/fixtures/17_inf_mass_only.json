@@ -1,0 +1,38 @@
+{
+  "description": "Infeasible: all Cu%=0, copper trivially balanced, mass imbalanced (100 in, 80 out). Any single-row unlock restores balance.",
+  "materials": [
+    {
+      "row_id": 1,
+      "name": "Zero-Cu input A",
+      "material_type": "Input",
+      "cu_pct": 0.0,
+      "quantity": 60.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 2,
+      "name": "Zero-Cu input B",
+      "material_type": "Input",
+      "cu_pct": 0.0,
+      "quantity": 40.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 3,
+      "name": "Zero-Cu output",
+      "material_type": "Output",
+      "cu_pct": 0.0,
+      "quantity": 80.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    }
+  ],
+  "expected": {
+    "feasible": false
+  }
+}

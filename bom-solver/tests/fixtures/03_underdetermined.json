@@ -1,0 +1,15 @@
+{
+  "description": "Underdetermined: locked input feeds two unlocked outputs that share the same Cu% (30%). The mass and copper equations are proportional (rank 1), leaving one degree of freedom. The L1 objective returns the starting values (70, 30) because they already satisfy x_A + x_B = 100.",
+  "materials": [
+    {"row_id": 1, "name": "Feed",      "material_type": "Input",  "cu_pct": 30.0, "quantity": 100.0, "locked": true,  "cu_pct_locked": true, "start_quantity": null},
+    {"row_id": 2, "name": "Product A", "material_type": "Output", "cu_pct": 30.0, "quantity":  70.0, "locked": false, "cu_pct_locked": true, "start_quantity": 70.0},
+    {"row_id": 3, "name": "Product B", "material_type": "Output", "cu_pct": 30.0, "quantity":  30.0, "locked": false, "cu_pct_locked": true, "start_quantity": 30.0}
+  ],
+  "expected": {
+    "feasible": true,
+    "quantities": {"1": 100.0, "2": 70.0, "3": 30.0},
+    "mass_residual": 0.0,
+    "copper_residual": 0.0,
+    "unlock_suggestion": null
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "description": "Underdetermined with 4 unlocked outputs and 2 locked inputs (total mass 200, copper 100). Two independent constraints, two degrees of freedom. Verifies feasibility and residuals only.",
+  "materials": [
+    {
+      "row_id": 1,
+      "name": "Feed A",
+      "material_type": "Input",
+      "cu_pct": 40.0,
+      "quantity": 100.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 2,
+      "name": "Feed B",
+      "material_type": "Input",
+      "cu_pct": 60.0,
+      "quantity": 100.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 3,
+      "name": "Pure Cu product",
+      "material_type": "Output",
+      "cu_pct": 100.0,
+      "quantity": 0.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": 50.0
+    },
+    {
+      "row_id": 4,
+      "name": "Blister copper",
+      "material_type": "Output",
+      "cu_pct": 50.0,
+      "quantity": 0.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": 60.0
+    },
+    {
+      "row_id": 5,
+      "name": "Concentrate",
+      "material_type": "Output",
+      "cu_pct": 20.0,
+      "quantity": 0.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": 40.0
+    },
+    {
+      "row_id": 6,
+      "name": "Tailings",
+      "material_type": "Output",
+      "cu_pct": 0.0,
+      "quantity": 0.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": 50.0
+    }
+  ],
+  "expected": {
+    "feasible": true
+  }
+}

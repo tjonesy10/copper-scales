@@ -1,0 +1,48 @@
+{
+  "description": "Underdetermined, all starts=null (default 0): 3 unlocked outputs share the same Cu% as the input. Only one independent constraint; multiple L1 optima. Fixture verifies feasibility and residuals only, not exact quantities.",
+  "materials": [
+    {
+      "row_id": 1,
+      "name": "Feed",
+      "material_type": "Input",
+      "cu_pct": 50.0,
+      "quantity": 100.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 2,
+      "name": "Stream A",
+      "material_type": "Output",
+      "cu_pct": 50.0,
+      "quantity": 0.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 3,
+      "name": "Stream B",
+      "material_type": "Output",
+      "cu_pct": 50.0,
+      "quantity": 0.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 4,
+      "name": "Stream C",
+      "material_type": "Output",
+      "cu_pct": 50.0,
+      "quantity": 0.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    }
+  ],
+  "expected": {
+    "feasible": true
+  }
+}

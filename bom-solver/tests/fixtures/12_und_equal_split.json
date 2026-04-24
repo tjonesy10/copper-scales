@@ -1,0 +1,54 @@
+{
+  "description": "Underdetermined, 3 unlocked outputs: L1 minimum falls at the equal split (40,40,40). Starts (50,40,30) are not feasible; solver converges to the symmetric minimum.",
+  "materials": [
+    {
+      "row_id": 1,
+      "name": "Feed",
+      "material_type": "Input",
+      "cu_pct": 30.0,
+      "quantity": 120.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 2,
+      "name": "High-Cu product",
+      "material_type": "Output",
+      "cu_pct": 60.0,
+      "quantity": 50.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": 50.0
+    },
+    {
+      "row_id": 3,
+      "name": "Mid-Cu product",
+      "material_type": "Output",
+      "cu_pct": 20.0,
+      "quantity": 40.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": 40.0
+    },
+    {
+      "row_id": 4,
+      "name": "Low-Cu product",
+      "material_type": "Output",
+      "cu_pct": 10.0,
+      "quantity": 30.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": 30.0
+    }
+  ],
+  "expected": {
+    "feasible": true,
+    "quantities": {
+      "1": 120.0,
+      "2": 40.0,
+      "3": 40.0,
+      "4": 40.0
+    }
+  }
+}

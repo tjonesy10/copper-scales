@@ -1,0 +1,12 @@
+{
+  "description": "Infeasible: both rows locked but mass doesn't balance (100 in, 80 out). Both rows have the same Cu% so either row alone is sufficient to unlock. The search tries locked rows in order and returns row 1 first.",
+  "materials": [
+    {"row_id": 1, "name": "Feed",    "material_type": "Input",  "cu_pct": 50.0, "quantity": 100.0, "locked": true, "cu_pct_locked": true, "start_quantity": null},
+    {"row_id": 2, "name": "Product", "material_type": "Output", "cu_pct": 50.0, "quantity":  80.0, "locked": true, "cu_pct_locked": true, "start_quantity": null}
+  ],
+  "expected": {
+    "feasible": false,
+    "quantities": {"1": 100.0, "2": 80.0},
+    "unlock_suggestion": [1]
+  }
+}

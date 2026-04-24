@@ -1,0 +1,43 @@
+{
+  "description": "Underdetermined, starts already feasible: one input (30%) feeds two outputs of the same Cu% (30%). Rank-1 constraint; L1 returns starting values unchanged.",
+  "materials": [
+    {
+      "row_id": 1,
+      "name": "Feed",
+      "material_type": "Input",
+      "cu_pct": 30.0,
+      "quantity": 100.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 2,
+      "name": "Product A",
+      "material_type": "Output",
+      "cu_pct": 30.0,
+      "quantity": 60.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": 60.0
+    },
+    {
+      "row_id": 3,
+      "name": "Product B",
+      "material_type": "Output",
+      "cu_pct": 30.0,
+      "quantity": 40.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": 40.0
+    }
+  ],
+  "expected": {
+    "feasible": true,
+    "quantities": {
+      "1": 100.0,
+      "2": 60.0,
+      "3": 40.0
+    }
+  }
+}

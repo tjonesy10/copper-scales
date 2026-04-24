@@ -1,0 +1,28 @@
+{
+  "description": "Infeasible: mass exactly balanced (100 in, 100 out) but copper not (30\u226020). k=1 unlock always gives inconsistent 1-var/2-eq system; k=2 (unlock both) resolves via trivial (0,0) solution.",
+  "materials": [
+    {
+      "row_id": 1,
+      "name": "Feed",
+      "material_type": "Input",
+      "cu_pct": 30.0,
+      "quantity": 100.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 2,
+      "name": "Product",
+      "material_type": "Output",
+      "cu_pct": 20.0,
+      "quantity": 100.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    }
+  ],
+  "expected": {
+    "feasible": false
+  }
+}

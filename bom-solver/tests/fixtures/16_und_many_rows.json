@@ -1,0 +1,158 @@
+{
+  "description": "Underdetermined, 15 rows: 10 locked inputs and 1 locked by-product feed 4 unlocked outputs sharing the same Cu% (rank-1 constraint). Verifies feasibility and residuals only.",
+  "materials": [
+    {
+      "row_id": 1,
+      "name": "Feed 1",
+      "material_type": "Input",
+      "cu_pct": 30.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 2,
+      "name": "Feed 2",
+      "material_type": "Input",
+      "cu_pct": 30.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 3,
+      "name": "Feed 3",
+      "material_type": "Input",
+      "cu_pct": 30.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 4,
+      "name": "Feed 4",
+      "material_type": "Input",
+      "cu_pct": 30.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 5,
+      "name": "Feed 5",
+      "material_type": "Input",
+      "cu_pct": 30.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 6,
+      "name": "Feed 6",
+      "material_type": "Input",
+      "cu_pct": 30.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 7,
+      "name": "Feed 7",
+      "material_type": "Input",
+      "cu_pct": 30.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 8,
+      "name": "Feed 8",
+      "material_type": "Input",
+      "cu_pct": 30.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 9,
+      "name": "Feed 9",
+      "material_type": "Input",
+      "cu_pct": 30.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 10,
+      "name": "Feed 10",
+      "material_type": "Input",
+      "cu_pct": 30.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 11,
+      "name": "Locked slag",
+      "material_type": "By-product",
+      "cu_pct": 30.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 12,
+      "name": "Stream 12",
+      "material_type": "Output",
+      "cu_pct": 30.0,
+      "quantity": 20.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": 20.0
+    },
+    {
+      "row_id": 13,
+      "name": "Stream 13",
+      "material_type": "Output",
+      "cu_pct": 30.0,
+      "quantity": 20.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": 20.0
+    },
+    {
+      "row_id": 14,
+      "name": "Stream 14",
+      "material_type": "Output",
+      "cu_pct": 30.0,
+      "quantity": 20.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": 20.0
+    },
+    {
+      "row_id": 15,
+      "name": "Stream 15",
+      "material_type": "Output",
+      "cu_pct": 30.0,
+      "quantity": 20.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": 20.0
+    }
+  ],
+  "expected": {
+    "feasible": true
+  }
+}

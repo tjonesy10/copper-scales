@@ -1,0 +1,43 @@
+{
+  "description": "Determined 3-row: single locked input feeds one 100%-Cu and one 0%-Cu unlocked output. Both edge-case compositions covered in one fixture.",
+  "materials": [
+    {
+      "row_id": 1,
+      "name": "Ore",
+      "material_type": "Input",
+      "cu_pct": 25.0,
+      "quantity": 100.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 2,
+      "name": "Pure Copper",
+      "material_type": "Output",
+      "cu_pct": 100.0,
+      "quantity": 0.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 3,
+      "name": "Gangue",
+      "material_type": "Output",
+      "cu_pct": 0.0,
+      "quantity": 0.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    }
+  ],
+  "expected": {
+    "feasible": true,
+    "quantities": {
+      "1": 100.0,
+      "2": 25.0,
+      "3": 75.0
+    }
+  }
+}
