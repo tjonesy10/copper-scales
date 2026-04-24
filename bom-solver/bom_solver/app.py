@@ -20,7 +20,7 @@ from bom_solver.validation import validate_materials
 # ---------------------------------------------------------------------------
 
 AUTOSAVE_PATH = Path.home() / ".bom-solver" / "autosave.json"
-UNITS = ["tonne", "kg", "lb"]
+UNITS = ["lb", "tonne", "kg"]
 MATERIAL_TYPES = ["Input", "Output", "By-product"]
 
 _DEFAULT_ROWS = [
@@ -209,7 +209,7 @@ def main() -> None:
     if "df" not in st.session_state:
         st.session_state.df = _make_default_df()
     if "unit" not in st.session_state:
-        st.session_state.unit = "tonne"
+        st.session_state.unit = "lb"
     if "solve_result" not in st.session_state:
         st.session_state.solve_result = None
     if "pre_solve_materials" not in st.session_state:
@@ -229,7 +229,7 @@ def main() -> None:
             if col_r.button("Restore", key="btn_restore"):
                 raw_df = pd.DataFrame(saved.get("materials", []))
                 st.session_state.df   = _normalise_df(raw_df)
-                st.session_state.unit = saved.get("unit", "tonne")
+                st.session_state.unit = saved.get("unit", "lb")
                 st.session_state.restore_prompted = True
                 st.rerun()
             if col_d.button("Discard", key="btn_discard"):
@@ -353,7 +353,7 @@ def main() -> None:
 
     if reset_clicked:
         st.session_state.df                  = _make_default_df()
-        st.session_state.unit                = "tonne"
+        st.session_state.unit                = "lb"
         st.session_state.solve_result        = None
         st.session_state.pre_solve_materials = None
         st.session_state.last_saved_hash     = None
