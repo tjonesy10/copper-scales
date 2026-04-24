@@ -54,6 +54,8 @@ def _normalise_df(df: pd.DataFrame) -> pd.DataFrame:
     ]:
         if col not in df.columns:
             df[col] = default
+        else:
+            df[col] = df[col].fillna(default)
     df["row_id"] = df["row_id"].astype(int)
     df["cu_pct_locked"] = True  # always True in v1 — not editable
     return df.reset_index(drop=True)
