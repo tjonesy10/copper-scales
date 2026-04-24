@@ -10,7 +10,7 @@ cd bom-solver
 uv sync
 
 # Start the app
-uv run streamlit run src/app.py
+uv run streamlit run bom_solver/app.py
 
 # Run tests
 uv run pytest
