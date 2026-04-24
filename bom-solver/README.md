@@ -47,7 +47,7 @@ Requires [uv](https://docs.astral.sh/uv/).
 git clone https://github.com/tjonesy10/copper-scales.git
 cd copper-scales/bom-solver
 uv sync
-uv run streamlit run bom_solver/app.py
+uv run streamlit run app.py
 ```
 
 Open `http://localhost:8501`. The PRD §12 example is pre-loaded so you can hit **Solve** immediately.
@@ -88,10 +88,9 @@ uv run pytest
 
 ```
 bom-solver/
-├── bom_solver/
-│   ├── solver.py       # LP formulation and solve() API
-│   ├── validation.py   # 8 validation rules + pipeline
-│   └── app.py          # Streamlit UI
+├── solver.py           # LP formulation and solve() API
+├── validation.py       # 8 validation rules + pipeline
+├── app.py              # Streamlit UI
 ├── tests/
 │   ├── fixtures/       # 20 JSON test cases
 │   ├── test_solver.py

@@ -17,7 +17,7 @@ from __future__ import annotations
 from collections import defaultdict
 from dataclasses import dataclass
 
-from bom_solver.solver import Material
+from solver import Material
 
 _OUTPUT_TYPES = ("Output", "By-product")
 

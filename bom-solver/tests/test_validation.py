@@ -5,8 +5,8 @@ from pathlib import Path
 
 import pytest
 
-from bom_solver.solver import Material
-from bom_solver.validation import (
+from solver import Material
+from validation import (
     ValidationError,
     validate_cu_pct_locked,
     validate_cu_pct_range,

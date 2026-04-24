@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from bom_solver.solver import Material, _compute_residuals, _run_lp, solve
+from solver import Material, _compute_residuals, _run_lp, solve
 
 FIXTURES_DIR = Path(__file__).parent / "fixtures"
 

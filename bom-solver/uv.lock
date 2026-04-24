@@ -47,7 +47,7 @@ wheels = [
 [[package]]
 name = "bom-solver"
 version = "0.1.0"
-source = { editable = "." }
+source = { virtual = "." }
 dependencies = [
     { name = "numpy" },
     { name = "pandas" },

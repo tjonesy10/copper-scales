@@ -12,8 +12,8 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
-from bom_solver.solver import Material, SolveResult, solve
-from bom_solver.validation import validate_materials
+from solver import Material, SolveResult, solve
+from validation import validate_materials
 
 # ---------------------------------------------------------------------------
 # Constants
