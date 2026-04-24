@@ -2,7 +2,7 @@
 
 ## Shipped
 
-- v1: 2026-04-24, commit febc25d, branch `claude/setup-bom-solver-project-XqiRv` (pending merge to main)
+- v1: 2026-04-24, commit dcb3a85, branch `claude/setup-bom-solver-project-XqiRv` merged to main
 
 ## Decisions
 
