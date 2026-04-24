@@ -44,7 +44,7 @@
 | `Material.unit` field | Added with default `"tonne"` | Required by `validate_units_match`. The PRD data model lists Unit as a per-row field even though the UI exposes it as a global selector; keeping it on the dataclass lets validation and future JSON import/export round-trip the value. Existing fixtures gain the field via the default. |
 | `ValidationError.row_id=None` convention | Documented in module docstring and inline comment | `None` = whole-BOM error (global banner in UI); `int` = row-specific error (inline highlight). Whoever writes the UI wiring needs this distinction explicit. |
 
-### PRD §12 discrepancy — FLAG FOR PRD UPDATE
+### PRD §12 discrepancy — resolved in code, PRD update pending owner
 
 The PRD §12 worked example states Product=60, Waste=40 given Ore=100 at 25% Cu,
 Product at 40% Cu, Waste at 10% Cu.  The copper balance does not hold:
@@ -52,8 +52,8 @@ Product at 40% Cu, Waste at 10% Cu.  The copper balance does not hold:
 The correct answer is Product=50, Waste=50:
   50 × 40 + 50 × 10 = 2000 + 500 = 2500 ✓.
 
-Fixture `01_prd_example.json` uses the corrected values.  **The PRD §12 table
-needs to be updated after Phase 3.**
+Fixture `01_prd_example.json` uses the corrected values.  The solver is correct.
+The PRD §12 results table needs its Product and Waste cells changed to 50 / 50.
 
 ### Phase 3 UI tweaks (approved changes to initial sketch)
 
