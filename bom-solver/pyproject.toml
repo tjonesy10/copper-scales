@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bom-solver"
+version = "0.1.0"
+description = "Local web app for BOM mass and copper balance solving"
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit",
+    "numpy",
+    "scipy",
+    "pandas",
+    "pytest",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

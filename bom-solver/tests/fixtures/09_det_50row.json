@@ -1,0 +1,512 @@
+{
+  "description": "Determined 50-row: 40 identical inputs, 4 locked by-products, 4 locked outputs, 2 unlocked outputs (0% and 25% Cu). Performance and scale check.",
+  "materials": [
+    {
+      "row_id": 1,
+      "name": "Feed 1",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 2,
+      "name": "Feed 2",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 3,
+      "name": "Feed 3",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 4,
+      "name": "Feed 4",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 5,
+      "name": "Feed 5",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 6,
+      "name": "Feed 6",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 7,
+      "name": "Feed 7",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 8,
+      "name": "Feed 8",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 9,
+      "name": "Feed 9",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 10,
+      "name": "Feed 10",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 11,
+      "name": "Feed 11",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 12,
+      "name": "Feed 12",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 13,
+      "name": "Feed 13",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 14,
+      "name": "Feed 14",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 15,
+      "name": "Feed 15",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 16,
+      "name": "Feed 16",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 17,
+      "name": "Feed 17",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 18,
+      "name": "Feed 18",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 19,
+      "name": "Feed 19",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 20,
+      "name": "Feed 20",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 21,
+      "name": "Feed 21",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 22,
+      "name": "Feed 22",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 23,
+      "name": "Feed 23",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 24,
+      "name": "Feed 24",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 25,
+      "name": "Feed 25",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 26,
+      "name": "Feed 26",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 27,
+      "name": "Feed 27",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 28,
+      "name": "Feed 28",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 29,
+      "name": "Feed 29",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 30,
+      "name": "Feed 30",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 31,
+      "name": "Feed 31",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 32,
+      "name": "Feed 32",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 33,
+      "name": "Feed 33",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 34,
+      "name": "Feed 34",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 35,
+      "name": "Feed 35",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 36,
+      "name": "Feed 36",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 37,
+      "name": "Feed 37",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 38,
+      "name": "Feed 38",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 39,
+      "name": "Feed 39",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 40,
+      "name": "Feed 40",
+      "material_type": "Input",
+      "cu_pct": 20.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 41,
+      "name": "Slag 41",
+      "material_type": "By-product",
+      "cu_pct": 5.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 42,
+      "name": "Slag 42",
+      "material_type": "By-product",
+      "cu_pct": 5.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 43,
+      "name": "Slag 43",
+      "material_type": "By-product",
+      "cu_pct": 5.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 44,
+      "name": "Slag 44",
+      "material_type": "By-product",
+      "cu_pct": 5.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 45,
+      "name": "Intermediate 45",
+      "material_type": "Output",
+      "cu_pct": 30.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 46,
+      "name": "Intermediate 46",
+      "material_type": "Output",
+      "cu_pct": 30.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 47,
+      "name": "Intermediate 47",
+      "material_type": "Output",
+      "cu_pct": 30.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 48,
+      "name": "Intermediate 48",
+      "material_type": "Output",
+      "cu_pct": 30.0,
+      "quantity": 10.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 49,
+      "name": "Zero-Cu tail",
+      "material_type": "Output",
+      "cu_pct": 0.0,
+      "quantity": 0.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 50,
+      "name": "Copper product",
+      "material_type": "Output",
+      "cu_pct": 25.0,
+      "quantity": 0.0,
+      "locked": false,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    }
+  ],
+  "expected": {
+    "feasible": true,
+    "quantities": {
+      "49": 56.0,
+      "50": 264.0
+    }
+  }
+}

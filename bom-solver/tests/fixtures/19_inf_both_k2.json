@@ -1,0 +1,38 @@
+{
+  "description": "Infeasible, both mass and copper imbalanced; no single-row unlock resolves it. k=2 (unlock rows 1 and 2) gives (20,0), satisfying all constraints.",
+  "materials": [
+    {
+      "row_id": 1,
+      "name": "Feed",
+      "material_type": "Input",
+      "cu_pct": 50.0,
+      "quantity": 100.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 2,
+      "name": "Product A",
+      "material_type": "Output",
+      "cu_pct": 30.0,
+      "quantity": 70.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    },
+    {
+      "row_id": 3,
+      "name": "Product B",
+      "material_type": "Output",
+      "cu_pct": 50.0,
+      "quantity": 20.0,
+      "locked": true,
+      "cu_pct_locked": true,
+      "start_quantity": null
+    }
+  ],
+  "expected": {
+    "feasible": false
+  }
+}

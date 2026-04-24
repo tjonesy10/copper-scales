@@ -1,0 +1,15 @@
+{
+  "description": "Fully determined: two locked inputs blended into one unlocked output. Both balance equations independently require x_output=100, so the system has a unique solution.",
+  "materials": [
+    {"row_id": 1, "name": "Feed A",          "material_type": "Input",  "cu_pct": 40.0, "quantity":  60.0, "locked": true,  "cu_pct_locked": true, "start_quantity": null},
+    {"row_id": 2, "name": "Feed B",          "material_type": "Input",  "cu_pct": 10.0, "quantity":  40.0, "locked": true,  "cu_pct_locked": true, "start_quantity": null},
+    {"row_id": 3, "name": "Blended Output",  "material_type": "Output", "cu_pct": 28.0, "quantity":   0.0, "locked": false, "cu_pct_locked": true, "start_quantity": null}
+  ],
+  "expected": {
+    "feasible": true,
+    "quantities": {"1": 60.0, "2": 40.0, "3": 100.0},
+    "mass_residual": 0.0,
+    "copper_residual": 0.0,
+    "unlock_suggestion": null
+  }
+}
